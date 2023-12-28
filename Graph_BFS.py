@@ -11,9 +11,9 @@ visited=set()
     
 stack = [source]
 while stack:
-    node = stack.pop(0)
-    print(node)
+    node = stack.pop(0)    
     if node not in visited:
+        print(node)
         visited.add(node)
         for neighbour in pathlist[node]:
             if neighbour not in visited:
