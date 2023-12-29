@@ -17,4 +17,16 @@ def dfs(curr):
         if node not in visited:
             dfs(node)
 dfs(source)
+#Iterative
+# stack=deque()
+# stack.append(source)
+# while stack:
+#     node = stack.pop()    
+#     if node not in visited:
+#         print(node)
+#         visited.add(node)
+#         for neighbour in reversed(pathlist[node]):
+#             if neighbour not in visited:
+#                 stack.append(neighbour)
+
 #expected output for given input: 013542
